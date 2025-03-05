@@ -1,0 +1,12 @@
+footer {
+    background-color: #1D2228;
+}
+
+.left {
+    width: 100%;
+}
+
+.right {
+    width: 50%;
+    background-color: aliceblue;
+}
