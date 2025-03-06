@@ -1,10 +1,11 @@
-:root{
+:root {
     display: flex;
     justify-content: center;
 }
 
 body {
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 10px;
 }
@@ -107,9 +108,6 @@ nav li a {
 }
 
 #not-found {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 60%;
     background-color: beige;
 }
@@ -117,4 +115,103 @@ nav li a {
 footer {
     background-color: rgb(26, 25, 25);
     height: 300px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    #logo {
+        width: 15%;
+    }
+
+    #search {
+        width: 200px;
+    }
+
+    #box-part {
+        width: 25%;
+    }
+
+    #item {
+        width: 50%;
+    }
+
+    #logo-part {
+        width: 30%;
+    }
+
+    #filter {
+        width: 50%;
+    }
+
+    #panel {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 20%;
+    }
+
+    #search {
+        width: 150px;
+    }
+
+    #box-part {
+        width: 30%;
+    }
+
+    #item {
+        width: 60%;
+    }
+
+    #logo-part {
+        width: 40%;
+    }
+
+    #filter {
+        width: 60%;
+    }
+
+    #panel {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 30%;
+    }
+
+    #search {
+        width: 100px;
+    }
+
+    #box-part {
+        width: 40%;
+    }
+
+    #item {
+        width: 80%;
+    }
+
+    #logo-part {
+        width: 50%;
+    }
+
+    #filter {
+        width: 80%;
+    }
+
+    #panel {
+        width: 90%;
+    }
 }
